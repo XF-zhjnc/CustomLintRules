@@ -4,6 +4,7 @@ import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.detector.api.CURRENT_API
 import com.android.tools.lint.detector.api.Issue
 import com.mildom.lintchecks.rules.SampleCodeDetector
+import com.mildom.lintchecks.rules.ToastUtilDetector
 
 /**
  * Lint Issue注册入口
@@ -13,7 +14,8 @@ class DYLintRuleRegistry : IssueRegistry() {
 
     override val issues: List<Issue>
         get() = listOf(
-            SampleCodeDetector.ISSUE
+            SampleCodeDetector.ISSUE,
+            ToastUtilDetector.ISSUE
         )
 
     override val api: Int
