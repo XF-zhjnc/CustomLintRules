@@ -1,0 +1,1 @@
+这个module仅仅是为了将checks产生的jar打包到aar，以便特定的项目引入自定义的Lint规则

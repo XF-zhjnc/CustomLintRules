@@ -1,0 +1,21 @@
+buildscript {
+    ext {
+        kotlinVersion = '1.6.10'
+        //假如AGP版本是 X.Y.Z 对应的lint版本应该为 X+23.Y.Z
+        agpVersion = '7.0.4'
+        lintVersion = '30.0.4'
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$agpVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
