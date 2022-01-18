@@ -10,5 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Toast.makeText(this, "aaa", Toast.LENGTH_SHORT).show()
+
+        val anonymousObj = object : TestBaseFragment(1) {}
     }
 }
