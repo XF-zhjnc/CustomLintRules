@@ -1,13 +1,13 @@
-# DY Lint Rules
+# Custom Lint Rules
 
-自定义[Lint工具](https://developer.android.com/studio/write/lint)规则仓库。
+给Douyu小伙伴写的自定义[Lint工具](https://developer.android.com/studio/write/lint)规则仓库，依赖Lint实现代码提示，可用于团队内统一代码规范。
 
 ## 使用
 
 拉代码
 ```bash
-git clone ssh://git@git.nonolive.co:1122/lulu.mll/dylintrules.git
-cd dylintrules
+git clone https://github.com/XF-zhjnc/CustomLintRules.git
+cd CustomLintRules
 ```
 
 在示例项目执行lint
